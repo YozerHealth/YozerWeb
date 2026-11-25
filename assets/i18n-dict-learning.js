@@ -142,7 +142,7 @@ Object.assign(window.YH_DICT, {
   "章系统内容": "chapters",
   "力学习模型": "powers in the model",
   "步每章结构": "steps per chapter",
-  "2万": "2万",
+  "2万": "20k",
   "字方法指南": "words of guidance",
   "页 A5 电子书": "A5 ebook pages",
   "翻开这本书之前，先听听作者想说什么": "Before you open this book, hear what the author wants to say",

@@ -168,7 +168,7 @@ Object.assign(window.YH_DICT, {
   "段多视角独白": "monologues",
   "大家长议题": "major family issues",
   "张简笔画插图": "line-drawing illustrations",
-  "4万": "4万",
+  "4万": "40k",
   "字叙事内容": "words of narrative",
   "翻开这本书之前，先听听作者想说什么": "Before you open this book, hear what the author wants to say",
   "五个故事 · 五个最让家长头疼的场景": "Five Stories · Five of the Toughest Challenges for Parents",

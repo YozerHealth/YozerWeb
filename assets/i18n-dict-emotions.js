@@ -139,7 +139,7 @@ Object.assign(window.YH_DICT, {
   "章系统方法": "chapters",
   "步情绪路径": "steps in the path",
   "页儿童练习册": "child workbook pages",
-  "2万": "2万",
+  "2万": "20k",
   "字方法指南": "words of guidance",
   "张简笔画插图": "line-drawing illustrations",
   "翻开这本书之前，先听听作者想说什么": "Before you open this book, hear what the author wants to say",

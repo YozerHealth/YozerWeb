@@ -142,7 +142,7 @@ Object.assign(window.YH_DICT, {
   "封面与内页样张来自电子书原稿": "Cover and sample pages are from the ebook manuscript",
   "章系统指南": "chapters",
   "类主题状态": "topics covered",
-  "2.7万": "2.7万",
+  "2.7万": "27k",
   "字专业内容": "words of guidance",
   "页 A5 电子书": "A5 ebook pages",
   "翻开这本书之前，先听听作者想说什么": "Before you open this book, hear what the author wants to say",

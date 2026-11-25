@@ -92,7 +92,7 @@ Object.assign(window.YH_DICT, {
   "震动节律": "Vibration rhythm",
   "马达跟着呼吸打拍子。黑屏、放在口袋里也能跟着，不一定要看屏幕。": "The motor beats with the breath. Works with screen off or in your pocket — you don’t have to look.",
   "唯一权限 VIBRATE": "VIBRATE only",
-  "桌面直达": "Home直达",
+  "桌面直达": "Home-screen shortcut",
   "三个长按快捷方式与一个「呼吸一下」小组件，都直接落到呼吸锚。": "Three long-press shortcuts and a “Breathe” widget, all landing straight on the breathing anchor.",
   "跳过所有中间页": "Skip all middle pages",
   "缓下来": "Calm down",

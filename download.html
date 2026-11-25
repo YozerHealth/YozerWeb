@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>悦泽健康 · 下载 / YozerHealth · Download</title>
-<meta name="description" content="悦泽健康 (YozerHealth) Android 应用官方下载页。纯静态页面，不收集任何数据。" />
+<title id="pageTitle">悦泽健康 · 下载 / YozerHealth · Download</title>
+<meta id="pageDesc" name="description" content="悦泽健康 (YozerHealth) Android 应用官方下载页。纯静态页面，不收集任何数据。" />
 <style>
   :root {
     --brand: #0e9f8e;
@@ -171,7 +171,7 @@
   <footer>
     <div data-i18n="note">本页面为纯静态下载页，不收集任何统计数据，也不含管理后台。</div>
     <div class="badge" data-i18n="plat">适用于 Android（arm64-v8a）· 纯静态托管</div>
-    <div style="margin-top:10px;"><a href="privacy.html" style="color:var(--brand);text-decoration:none;font-weight:600;">隐私政策</a> · <a href="index.html" style="color:var(--brand);text-decoration:none;font-weight:600;">返回首页</a></div>
+    <div style="margin-top:10px;"><a href="privacy.html" data-i18n="privacyLink" style="color:var(--brand);text-decoration:none;font-weight:600;">隐私政策</a> · <a href="index.html" data-i18n="homeLink" style="color:var(--brand);text-decoration:none;font-weight:600;">返回首页</a></div>
   </footer>
 
 <script>
@@ -186,7 +186,8 @@
         debugTag: "开发者", debugName: "调试版", debugDesc: "含调试信息，供开发与测试使用。",
         version: "版本", size: "体积", dlBtn: "下载 APK",
         note: "本页面为纯静态下载页，不收集任何统计数据，也不含管理后台。",
-        plat: "适用于 Android（arm64-v8a）· 纯静态托管"
+        plat: "适用于 Android（arm64-v8a）· 纯静态托管",
+        privacyLink: "隐私政策", homeLink: "返回首页"
       },
       en: {
         tagline: "Your all-in-one personal health manager",
@@ -197,7 +198,8 @@
         debugTag: "Developers", debugName: "Debug build", debugDesc: "Includes debug symbols for development and testing.",
         version: "Version", size: "Size", dlBtn: "Download APK",
         note: "This is a pure static download page. It collects no analytics and has no admin backend.",
-        plat: "For Android (arm64-v8a) · Pure static hosting"
+        plat: "For Android (arm64-v8a) · Pure static hosting",
+        privacyLink: "Privacy Policy", homeLink: "Back to Home"
       }
     };
     var lang = "zh";
@@ -210,6 +212,11 @@
         var key = nodes[i].getAttribute("data-i18n");
         if (dict[lang][key] != null) nodes[i].textContent = dict[lang][key];
       }
+      document.getElementById("pageTitle").textContent = (lang === "zh")
+        ? "悦泽健康 · 下载 / YozerHealth · Download" : "YozerHealth · Download";
+      document.getElementById("pageDesc").setAttribute("content", (lang === "zh")
+        ? "悦泽健康 (YozerHealth) Android 应用官方下载页。纯静态页面，不收集任何数据。"
+        : "Official Android download page for YozerHealth, a pure static site that collects no data.");
     }
     btn.addEventListener("click", function () {
       lang = (lang === "zh") ? "en" : "zh";

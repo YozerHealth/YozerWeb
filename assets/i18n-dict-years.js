@@ -141,7 +141,7 @@ Object.assign(window.YH_DICT, {
   "章科学养育": "chapters of parenting",
   "条实操建议": "practical tips",
   "张简笔画插图": "line-drawing illustrations",
-  "3.6万": "3.6万",
+  "3.6万": "36k",
   "字实操内容": "words of practical content",
   "页 A5 篇幅": "pages in A5",
   "翻开这本书之前，先听听作者想说什么": "Before you open this book, hear what the author wants to say",

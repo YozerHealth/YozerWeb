@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>悦泽健康 · 扫码下载 / YozerHealth · Scan to Download</title>
-<meta name="description" content="悦泽健康 (YozerHealth) 扫码下载页。纯静态页面，二维码指向当前站点托管的 APK。" />
+<title id="pageTitle">悦泽健康 · 扫码下载 / YozerHealth · Scan to Download</title>
+<meta id="pageDesc" name="description" content="悦泽健康 (YozerHealth) 扫码下载页。纯静态页面，二维码指向当前站点托管的 APK。" />
 <style>
   :root {
     --brand: #0e9f8e;
@@ -2500,6 +2500,11 @@ var qrcode = function() {
         var key = nodes[i].getAttribute("data-i18n");
         if (dict[lang][key] != null) nodes[i].textContent = dict[lang][key];
       }
+      document.getElementById("pageTitle").textContent = (lang === "zh")
+        ? "悦泽健康 · 扫码下载 / YozerHealth · Scan to Download" : "YozerHealth · Scan to Download";
+      document.getElementById("pageDesc").setAttribute("content", (lang === "zh")
+        ? "悦泽健康 (YozerHealth) 扫码下载页。纯静态页面，二维码指向当前站点托管的 APK。"
+        : "Scan to download YozerHealth. This pure static page points to the APK hosted on the current site.");
     }
     btn.addEventListener("click", function () { lang = (lang === "zh") ? "en" : "zh"; apply(); });
     apply();

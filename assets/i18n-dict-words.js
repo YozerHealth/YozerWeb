@@ -139,7 +139,7 @@ Object.assign(window.YH_DICT, {
   "组高频场景": "everyday scenarios",
   "覆盖一整天": "Across the whole day",
   "封面与内页样张来自电子书原稿": "Cover and sample pages are from the ebook manuscript",
-  "2.8万": "2.8万",
+  "2.8万": "28k",
   "字实操内容": "words of practical guidance",
   "页 A5 电子书": "A5 ebook pages",
   "张简笔画插图": "line-drawing illustrations",
