@@ -141,4 +141,11 @@ Object.assign(window.YH_DICT, {
   "面向 12–18 岁青少年的心理成长 App：六维测评、70 个分龄微任务、五阶段森林主线，全程离线运行。": "A psychological growth app for ages 12–18: six-dimension assessment, 70 age-banded micro-tasks and a five-stage forest journey, fully offline.",
   "面向家庭的儿童心理与亲子成长电子书阅读 App：内置 23 本书、942 页内容，支持手势翻页、自动翻页与中文朗读，全程离线。": "An offline ebook reader for families: 23 built-in books and 942 pages of child psychology and parenting content, with gesture page turns, auto-page and Chinese read-aloud.",
   "Yozer 手机应用：悦泽心理绘本、悦泽健康、悦泽量表、悦泽心情急救、悦泽心理成长、悦泽图书。端侧优先、隐私优先的 Android 应用。": "Yozer mobile apps: YozerMentalBook, YozerHealth, YozerPsychoMetric, YozerMentalAID, YozerMentalGrowth and YozerBook — on-device, privacy-first Android apps.",
+  "儿童心理常见问题": "Psychology FAQ",
+  "查看全部问题": "View all questions",
+  "12 个常见成长场景：分离焦虑、发脾气、被欺负、厌学、考试焦虑、手机沉迷、青春期叛逆……每个问题都有合成案例、家长应对步骤与求助信号。": "12 common growing-up scenarios — separation anxiety, tantrums, bullying, school refusal, exam anxiety, screen use, adolescence and more — each with composite cases, parent steps and help signals.",
+  "· 情绪困扰 · 社交与人际": "· Emotional distress · Social & relationships",
+  "· 学习与学校 · 成长与数字生活": "· Learning & school · Growth & digital life",
+  "YOZER · 应用、电子书与问题指南": "YOZER · APPS, EBOOKS & GUIDES",
+  "围绕家庭健康与儿童心理，我们做三类内容：端侧优先、隐私优先的手机应用，可直接试读的育儿与心理电子书，以及儿童心理常见问题的实操指南。先选一个方向，再看具体内容。": "Around family health and child psychology, we build three things: on-device, privacy-first mobile apps, previewable parenting and psychology ebooks, and practical guides to common child psychology questions. Pick a direction to begin.",
 });

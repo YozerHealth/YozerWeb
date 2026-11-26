@@ -698,12 +698,15 @@ img { max-width: 100%; height: auto; }
 @media (max-width: 1080px) { .hub-grid.five { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 820px) { .hub-grid.five { grid-template-columns: 1fr; max-width: 460px; } }
 
-/* 首页一级入口：两张卡片水平居中（与二级列表的四列布局区分） */
+/* 首页一级入口：四张卡片 2×2（与二级列表的四列布局区分） */
 .hub-grid.home-options {
-  grid-template-columns: repeat(2, minmax(0, 420px));
+  grid-template-columns: repeat(2, minmax(0, 460px));
   width: auto;
   max-width: 100%;
   margin-inline: auto;
+}
+@media (max-width: 1100px) {
+  .hub-grid.home-options { grid-template-columns: repeat(2, minmax(0, 400px)); width:auto; max-width:100%; }
 }
 @media (max-width: 820px) {
   .hub-grid.home-options { grid-template-columns: 1fr; width: 100%; max-width: 460px; }

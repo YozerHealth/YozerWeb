@@ -157,6 +157,6 @@ Object.assign(window.YH_DICT, {
   "问题反馈": "Feedback",
   "微信": "WeChat",
   "邮箱": "Email",
-  "悦泽科技": "Yozer Tech",
+  "悦泽心理": "Yozer Psychology",
   "本应用为心理成长与教育参考工具，不提供诊断、治疗或危机干预服务。": "This app is for psychological growth and education; it does not provide diagnosis, treatment or crisis intervention."
 });

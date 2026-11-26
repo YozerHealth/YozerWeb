@@ -220,6 +220,6 @@ Object.assign(window.YH_DICT, {
   "问题反馈": "Feedback",
   "微信": "WeChat",
   "邮箱": "Email",
-  "悦泽科技": "Yozer Tech",
+  "悦泽心理": "Yozer Psychology",
   "本页面为产品介绍，内容以 App 内实际版本为准。": "This is a product introduction; the app itself is the source of truth for actual content."
 });

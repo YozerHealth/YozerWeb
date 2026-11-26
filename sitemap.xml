@@ -43,6 +43,13 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/angry.html?lang=en"/>
   </url>
   <url>
+    <loc>https://yozer.cn/brand.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/brand.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/brand.html?lang=en"/>
+  </url>
+  <url>
     <loc>https://yozer.cn/calm.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -55,6 +62,97 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/child-mental-health.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/child-mental-health.html?lang=en"/>
+  </url>
+  <url>
+    <loc>https://yozer.cn/concern-adolescent-rebellion.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concern-adolescent-rebellion.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-adolescent-rebellion.html?lang=en"/>
+  </url>
+  <url>
+    <loc>https://yozer.cn/concern-attention-difficulty.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concern-attention-difficulty.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-attention-difficulty.html?lang=en"/>
+  </url>
+  <url>
+    <loc>https://yozer.cn/concern-bullying.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concern-bullying.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-bullying.html?lang=en"/>
+  </url>
+  <url>
+    <loc>https://yozer.cn/concern-exam-anxiety.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concern-exam-anxiety.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-exam-anxiety.html?lang=en"/>
+  </url>
+  <url>
+    <loc>https://yozer.cn/concern-fears.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concern-fears.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-fears.html?lang=en"/>
+  </url>
+  <url>
+    <loc>https://yozer.cn/concern-school-refusal.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concern-school-refusal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-school-refusal.html?lang=en"/>
+  </url>
+  <url>
+    <loc>https://yozer.cn/concern-screen-addiction.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concern-screen-addiction.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-screen-addiction.html?lang=en"/>
+  </url>
+  <url>
+    <loc>https://yozer.cn/concern-separation-anxiety.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concern-separation-anxiety.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-separation-anxiety.html?lang=en"/>
+  </url>
+  <url>
+    <loc>https://yozer.cn/concern-sibling-rivalry.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concern-sibling-rivalry.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-sibling-rivalry.html?lang=en"/>
+  </url>
+  <url>
+    <loc>https://yozer.cn/concern-sleep-problems.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concern-sleep-problems.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-sleep-problems.html?lang=en"/>
+  </url>
+  <url>
+    <loc>https://yozer.cn/concern-social-withdrawal.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concern-social-withdrawal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-social-withdrawal.html?lang=en"/>
+  </url>
+  <url>
+    <loc>https://yozer.cn/concern-temper-tantrums.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concern-temper-tantrums.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-temper-tantrums.html?lang=en"/>
+  </url>
+  <url>
+    <loc>https://yozer.cn/concerns.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concerns.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concerns.html?lang=en"/>
   </url>
   <url>
     <loc>https://yozer.cn/dad.html</loc>

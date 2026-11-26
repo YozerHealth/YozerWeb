@@ -148,7 +148,7 @@ Object.assign(window.YH_DICT, {
   "微信": "WeChat",
   "邮箱": "Email",
   "添加时请注明电子书名称，我们会尽快回复。": "Please mention the ebook title when contacting us; we will reply as soon as possible.",
-  "悦泽科技": "Yozer Tech",
+  "悦泽心理": "Yozer Psychology",
   "专注家庭健康与儿童心理的产品团队，坚持端侧优先、隐私优先。": "A team focused on family health and child psychology, committed to on-device and privacy-first design.",
   "Yozer 全家应用": "Yozer family",
   "首页": "Home",
