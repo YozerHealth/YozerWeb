@@ -163,3 +163,34 @@
     setText('dlSha' + suffix, v.sha256 || t('文件不可用'));
   });
 })();
+
+/* SEO-META-SYNC-BEGIN */
+(function () {
+  function applySeoMetas(lang) {
+    var en = lang === 'en';
+    function setMeta(selector, attr, val) {
+      var el = document.querySelector(selector);
+      if (el) el.setAttribute(attr, val);
+    }
+    // title
+    var t = document.querySelector('title');
+    if (t && t.getAttribute('data-zh')) {
+      t.textContent = en ? (t.getAttribute('data-en') || t.textContent) : t.getAttribute('data-zh');
+    }
+    // meta with data-i18n-content
+    var nodes = document.querySelectorAll('meta[data-seo-en]');
+    Array.prototype.forEach.call(nodes, function (el) {
+      if (!el.getAttribute('data-zh')) el.setAttribute('data-zh', el.getAttribute('content') || '');
+      el.setAttribute('content', en ? el.getAttribute('data-seo-en') : el.getAttribute('data-zh'));
+    });
+    document.documentElement.setAttribute('lang', en ? 'en' : 'zh-CN');
+  }
+  if (window.YH && typeof window.YH.onChange === 'function') {
+    window.YH.onChange(applySeoMetas);
+  } else {
+    document.addEventListener('yh:langchange', function (e) {
+      applySeoMetas(e.detail);
+    });
+  }
+})();
+/* SEO-META-SYNC-END */
