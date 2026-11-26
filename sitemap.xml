@@ -85,6 +85,13 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-bullying.html?lang=en"/>
   </url>
   <url>
+    <loc>https://yozer.cn/concern-cyberbullying.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concern-cyberbullying.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-cyberbullying.html?lang=en"/>
+  </url>
+  <url>
     <loc>https://yozer.cn/concern-exam-anxiety.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -97,6 +104,20 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concern-fears.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-fears.html?lang=en"/>
+  </url>
+  <url>
+    <loc>https://yozer.cn/concern-frustration-tolerance.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concern-frustration-tolerance.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-frustration-tolerance.html?lang=en"/>
+  </url>
+  <url>
+    <loc>https://yozer.cn/concern-homework-procrastination.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concern-homework-procrastination.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-homework-procrastination.html?lang=en"/>
   </url>
   <url>
     <loc>https://yozer.cn/concern-school-refusal.html</loc>
@@ -139,6 +160,13 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concern-social-withdrawal.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-social-withdrawal.html?lang=en"/>
+  </url>
+  <url>
+    <loc>https://yozer.cn/concern-teen-depression.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/concern-teen-depression.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/concern-teen-depression.html?lang=en"/>
   </url>
   <url>
     <loc>https://yozer.cn/concern-temper-tantrums.html</loc>
@@ -258,13 +286,6 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/psychometric.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/psychometric.html?lang=en"/>
-  </url>
-  <url>
-    <loc>https://yozer.cn/qrcode.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yozer.cn/qrcode.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://yozer.cn/qrcode.html?lang=en"/>
   </url>
   <url>
     <loc>https://yozer.cn/sad.html</loc>

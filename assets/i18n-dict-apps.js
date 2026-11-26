@@ -143,7 +143,7 @@ Object.assign(window.YH_DICT, {
   "Yozer 手机应用：悦泽心理绘本、悦泽健康、悦泽量表、悦泽心情急救、悦泽心理成长、悦泽图书。端侧优先、隐私优先的 Android 应用。": "Yozer mobile apps: YozerMentalBook, YozerHealth, YozerPsychoMetric, YozerMentalAID, YozerMentalGrowth and YozerBook — on-device, privacy-first Android apps.",
   "儿童心理常见问题": "Psychology FAQ",
   "查看全部问题": "View all questions",
-  "12 个常见成长场景：分离焦虑、发脾气、被欺负、厌学、考试焦虑、手机沉迷、青春期叛逆……每个问题都有合成案例、家长应对步骤与求助信号。": "12 common growing-up scenarios — separation anxiety, tantrums, bullying, school refusal, exam anxiety, screen use, adolescence and more — each with composite cases, parent steps and help signals.",
+  "16 个常见成长场景：分离焦虑、发脾气、被欺负、厌学、考试焦虑、手机沉迷、青春期叛逆、青少年抑郁情绪、网络欺凌、作业磨蹭、输不起……每个问题都有合成案例、家长应对步骤与求助信号。": "16 common growing-up scenarios — separation anxiety, tantrums, bullying, school refusal, exam anxiety, screen use, adolescence, teen depression, cyberbullying, homework procrastination, frustration tolerance and more — each with composite cases, parent steps and help signals.",
   "· 情绪困扰 · 社交与人际": "· Emotional distress · Social & relationships",
   "· 学习与学校 · 成长与数字生活": "· Learning & school · Growth & digital life",
   "YOZER · 应用、电子书与问题指南": "YOZER · APPS, EBOOKS & GUIDES",

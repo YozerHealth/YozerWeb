@@ -61,7 +61,7 @@ Object.assign(window.YH_DICT, {
   "这里是未来会员体系的预留板块，先把方向写清楚，再逐步兑现。": "This is a reserved space for our future membership programme — direction first, delivery step by step.",
   "当前为规划中的权益方向，不构成任何承诺或收费邀约；开放时间、规则与费用以后续公告为准。": "These are planned directions only, not a promise or paid offer; timing, rules and any fees will be announced later.",
   "从产品开始，认识悦泽心理": "Get to know Yozer Psychology through our products",
-  "六款应用、24 本电子书与 12 个常见心理问题指南，都是这套理念的具体样子。": "Six apps, 24 ebooks and 12 guides to common psychology questions are concrete expressions of these principles.",
+  "六款应用、24 本电子书与 16 个常见心理问题指南，都是这套理念的具体样子。": "Six apps, 24 ebooks and 16 guides to common psychology questions are concrete expressions of these principles.",
   "查看全部应用": "View all apps",
   "端侧优先": "On-device first",
   "专注家庭健康与儿童心理的产品团队，坚持端侧优先、隐私优先。": "A team focused on family health and child psychology, committed to on-device and privacy-first design.",
