@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="悦泽图书是一款面向家庭的儿童心理与亲子成长电子书阅读 App，内置 23 本电子书、942 页内容，支持手势翻页、自动翻页与中文朗读，全程离线。">
+<meta name="theme-color" content="#2E5E51">
+<title>悦泽图书 YozerBook · 23 本儿童心理与亲子成长电子书</title>
+<link rel="preload" as="image" href="assets/yozerbook/cover-01.webp" type="image/webp"><link rel="icon" type="image/png" href="assets/app-icon.png">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/i18n-dict.js"></script>
+<script src="assets/i18n-dict-yozerbook.js"></script>
+<script src="assets/i18n.js"></script>
+<style>
+  .trust-inner.five { grid-template-columns:repeat(5,1fr); }
+  .book-phone { width:300px; margin:0 auto; background:#1e1a17; border:9px solid #1e1a17; border-radius:36px; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.28); }
+  .book-phone .phone-screen { background:#fffdf8; padding:14px; border-radius:27px; }
+  .book-phone-head { background:#2e5e51; color:#fff; padding:9px 13px; border-radius:12px 12px 0 0; display:flex; justify-content:space-between; font-size:13px; }
+  .book-phone-hint { background:#efe8da; color:#70665d; font-size:10px; padding:7px 10px; }
+  .book-covers { display:grid; grid-template-columns:1fr 1fr; gap:8px; padding:10px; background:#f8f5ee; }
+  .book-covers figure { margin:0; background:#fff; border-radius:8px; overflow:hidden; }
+  .book-covers img { width:100%; height:104px; object-fit:cover; object-position:top; }
+  .book-covers figcaption { font-size:10px; text-align:center; padding:5px 2px; font-weight:700; }
+  .book-covers small { display:block; font-size:8px; color:var(--ink3); }
+  .yb-book-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:16px; }
+  .yb-book { background:var(--surface); border:1px solid var(--line); border-radius:14px; overflow:hidden; transition:.2s; }
+  .yb-book:hover { transform:translateY(-4px); box-shadow:var(--shadow); }
+  .yb-book img { width:100%; height:170px; object-fit:cover; object-position:top; background:#eee; }
+  .yb-book-body { padding:12px 12px 14px; }
+  .yb-book h3 { font-size:14px; margin:0 0 6px; line-height:1.45; }
+  .yb-book p { font-size:11px; color:var(--ink2); margin:0 0 8px; line-height:1.6; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+  .yb-book-meta { display:flex; justify-content:space-between; gap:6px; font-size:10px; color:var(--ink3); }
+  .yb-pill { padding:2px 8px; border-radius:999px; background:var(--soft); color:var(--primary); font-weight:800; }
+  .yb-chip { display:inline-block; padding:5px 11px; margin:0 5px 6px 0; border-radius:8px; background:var(--surface); border:1px solid var(--line); font-size:12px; }
+  .yb-chip.on { background:var(--primary); color:var(--on-primary); border-color:var(--primary); }
+  .reader-img { width:320px; max-width:100%; margin:0 auto; border-radius:10px; box-shadow:var(--shadow); }
+  @media(max-width:1000px){ .yb-book-grid{grid-template-columns:repeat(3,1fr);} .trust-inner.five{grid-template-columns:repeat(3,1fr);} }
+  @media(max-width:640px){ .yb-book-grid{grid-template-columns:repeat(2,1fr);} .trust-inner.five{grid-template-columns:repeat(2,1fr);} .yb-book img{height:130px;} }
+</style>
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="返回 Yozer 首页">
+      <img class="brand-mark" src="assets/logo-mark.png" alt="">
+      <span class="brand-text"><b>悦泽图书</b><small>YozerBook</small></span>
+    </a>
+    <nav class="nav-links" aria-label="主导航"><a href="index.html">首页</a><a href="#overview">应用概览</a><a href="#features">核心功能</a><a href="#library">内置书目</a><a href="#reader">阅读体验</a><a href="#download">下载</a></nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" type="button" title="切换深浅主题" aria-label="切换深浅主题"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <button class="lang-switch" type="button" data-yh-lang-toggle aria-label="Switch to English">EN</button>
+      <a class="btn btn-primary btn-sm" href="#download" data-dl>下载 App</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero wrap"><div class="hero-copy">
+  <div class="eyebrow"><span class="dot"></span>悦泽心理出品 · V1.0.0</div>
+  <h1>把专业的儿童心理指南<br><span class="hl">装进口袋</span></h1>
+  <p class="lead">《悦泽图书》是悦泽心理出品的电子书阅读应用，收录儿童心理、情绪管理、学习力与亲子成长等系列图书。内容全部加密内置，支持离线阅读、手势翻页、自动翻页与中文语音朗读。</p>
+  <div class="hero-actions">
+    <a class="btn btn-primary btn-lg" href="https://github.com/YozerHealth/YozerWeb/releases/download/YozerLibrary_V1.0.0/YozerLibrary_V1.0.0.apk" target="_blank" rel="noopener" data-dl>下载 APK <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg></a>
+    <a class="btn btn-ghost btn-lg" href="#library">查看内置书目</a>
+  </div>
+  <div class="hero-meta"><span>包名 com.yozerbook.app</span><i></i><span>Android 8.0+</span><i></i><span>100% 离线阅读</span></div>
+  <div class="hero-tags"><span>23 本电子书</span><span>加密内置</span><span>中文朗读</span><span>双指缩放</span></div>
+</div>
+<div class="hero-visual">
+  <div class="glow" style="background:radial-gradient(420px 320px at 50% 40%,rgba(46,94,81,.25),transparent 70%)"></div>
+  <div class="book-phone"><div class="phone-screen">
+    <div class="book-phone-head"><b>悦泽图书</b><span>离线书架</span></div>
+    <div class="book-phone-hint">23 本电子书已内置 · 点击封面开始阅读</div>
+    <div class="book-covers"><figure><img src="assets/yozerbook/cover-01.webp" alt="陪孩子长大封面" loading="lazy"><figcaption>陪孩子长大<small>114 页 · 分龄育儿</small></figcaption></figure><figure><img src="assets/yozerbook/cover-02.webp" alt="生命最初的三年封面" loading="lazy"><figcaption>生命最初的三年<small>52 页 · 分龄育儿</small></figcaption></figure><figure><img src="assets/yozerbook/cover-03.webp" alt="陪孩子走过青春期封面" loading="lazy"><figcaption>陪孩子走过青春期<small>46 页 · 分龄育儿</small></figcaption></figure><figure><img src="assets/yozerbook/cover-04.webp" alt="转折点封面" loading="lazy"><figcaption>转折点<small>37 页 · 分龄育儿</small></figcaption></figure></div>
+  </div></div>
+  <p class="visual-note">界面为功能示意，非真机截图</p>
+</div></section>
+<section class="trust"><div class="wrap trust-inner five">
+  <div class="trust-item"><b>23</b><span>本电子书</span></div><div class="trust-item"><b>942</b><span>页专业内容</span></div>
+  <div class="trust-item"><b>2</b><span>列书架布局</span></div><div class="trust-item"><b>4</b><span>档自动翻页</span></div>
+  <div class="trust-item"><b>0</b><span>网络依赖</span></div>
+</div></section>
+
+<section class="section section-alt" id="overview"><div class="wrap">
+  <div class="sec-head"><div class="kicker">OVERVIEW</div><h2>应用概览</h2><p>从书架到阅读，再到隐私与安全，每一项功能都围绕「随时翻开、安心读完」打造。</p></div>
+  <div class="overview-meta">
+    <div class="om"><b>应用名称</b><span>悦泽图书</span></div>
+    <div class="om"><b>英文名称</b><span>YozerBook</span></div>
+    <div class="om"><b>包名</b><code>com.yozerbook.app</code></div>
+    <div class="om"><b>当前版本</b><span>V1.0.0</span></div>
+    <div class="om"><b>系统要求</b><span>Android 8.0（API 26）+ · 竖屏</span></div>
+    <div class="om"><b>运行方式</b><span>完全离线，无网络权限</span></div>
+  </div>
+  <div class="note-box" style="margin-top:18px"><p>所有电子书内容在打包阶段即完成加密封装，APK 内不存在可直接打开的明文页面或文本。</p></div>
+</div></section>
+
+<section class="section" id="features"><div class="wrap">
+  <div class="sec-head"><div class="kicker">FEATURES</div><h2>为家庭阅读而设计的六个细节</h2><p>从书架到阅读，再到隐私与安全，每一项功能都围绕「随时翻开、安心读完」打造。</p></div>
+  <div class="feature-grid"><article class="feature reveal"><h3>双列书架，一眼找到</h3><p>每页 2 本，封面自动裁掉多余留白；育儿手册置顶，点击封面即可进入阅读。</p></article><article class="feature reveal"><h3>手势翻页与缩放</h3><p>左右滑动翻页并带平滑动画；双指捏合缩放 1–6 倍，放大后可拖动，双击复位，缩放时不会误翻页。</p></article><article class="feature reveal"><h3>自动翻页四档循环</h3><p>无需弹窗，单击按钮在 关 / 10 秒 / 20 秒 / 30 秒 / 1 分钟 间循环切换，读到末页自动停止。</p></article><article class="feature reveal"><h3>中文语音朗读</h3><p>调用系统中文 TTS 朗读当前页；每页只朗读一遍，翻到新页才开始读新内容，不会重复播放。</p></article><article class="feature reveal"><h3>关于与反馈入口</h3><p>「关于」页集中展示版本号、隐私保护条款、免责声明与问题反馈方式，微信和邮箱可一键复制，方便随时联系我们。</p></article><article class="feature reveal"><h3>加密内置，安心离线</h3><p>封面、页面图像与朗读文本全部封装为加密媒体包，APK 内无明文图片或文本，不联网也能完整阅读。</p></article></div>
+</div></section>
+
+<section class="section section-alt" id="library"><div class="wrap">
+  <div class="sec-head"><div class="kicker">BUILT-IN LIBRARY</div><h2>内置 23 本电子书</h2><p>覆盖核心手册、年龄延展、主题深挖、形式创新、角色与专业及情绪绘本六大系列；每本均附内容简介，内容全部随 App 加密内置，无需下载。</p></div>
+  <div class="yb-book-grid"><article class="yb-book reveal"><img src="assets/yozerbook/cover-01.webp" alt="陪孩子长大封面" loading="lazy"><div class="yb-book-body"><h3>陪孩子长大</h3><p>悦泽心理的代表作，覆盖 3—12 岁家庭的 48 章、144 个实例情景。以「典型表现→背后的原因→建议与实例→容易踩的坑→专家点评」的五步法，系统回应成长中的高频难题。</p><div class="yb-book-meta"><span>114 页 · 分龄育儿</span><span class="yb-pill">核心手册</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-02.webp" alt="生命最初的三年封面" loading="lazy"><div class="yb-book-body"><h3>生命最初的三年</h3><p>面向新手父母的 0—3 岁养育指南。以发展心理学和儿科学为依据，逐月厘清「什么正常、什么需要警惕」，从依恋关系、感统发育到分离焦虑与如厕训练，给出可操作做法。</p><div class="yb-book-meta"><span>52 页 · 分龄育儿</span><span class="yb-pill">年龄延展</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-03.webp" alt="陪孩子走过青春期封面" loading="lazy"><div class="yb-book-body"><h3>陪孩子走过青春期</h3><p>面向 11—18 岁孩子家长的青春期亲子读本。既不妖魔化青春期，也不空谈尊重理解，而是给出身体发育、情绪风暴、同伴压力、手机网络与心理危机识别的具体沟通话术和边界设定。</p><div class="yb-book-meta"><span>46 页 · 分龄育儿</span><span class="yb-pill">年龄延展</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-04.webp" alt="转折点封面" loading="lazy"><div class="yb-book-body"><h3>转折点</h3><p>把入园、幼小衔接、小学中段、小升初、转学等关键转折整理成独立读本。每个过渡期都配「家长准备清单」和「时间倒推表」，帮助家长提前规划，而不是临时抱佛脚。</p><div class="yb-book-meta"><span>37 页 · 分龄育儿</span><span class="yb-pill">年龄延展</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-05.webp" alt="看见彼此封面" loading="lazy"><div class="yb-book-body"><h3>看见彼此</h3><p>选取二胎争宠、厌学、被欺负、手机沉迷、考试焦虑五个典型问题，每个故事分别从孩子、父亲、母亲、老师等多视角叙述同一件事，最后由心理学专家点评每个人的作用与反思。</p><div class="yb-book-meta"><span>56 页 · 故事读本</span><span class="yb-pill">形式创新</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-06.webp" alt="那一刻该说什么封面" loading="lazy"><div class="yb-book-body"><h3>那一刻该说什么</h3><p>从 144 个实例情景中抽取高频场景，做成「那一刻到底该说什么」的口袋速查卡。错误说法与正确说法对照，再配一句话原理，把方法论变成随时可用的沟通工具。</p><div class="yb-book-meta"><span>48 页 · 实用工具</span><span class="yb-pill">形式创新</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-07.webp" alt="认识我的情绪小怪兽封面" loading="lazy"><div class="yb-book-body"><h3>认识我的情绪小怪兽</h3><p>情绪小怪兽系列第一册。把抽象的情绪变成孩子看得懂、愿意读的形象，帮助 3—6 岁幼儿认识自己的各种感受，是家长读手册、孩子读绘本的亲子共读闭环起点。</p><div class="yb-book-meta"><span>26 页 · 情绪绘本</span><span class="yb-pill">情绪绘本</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-08.webp" alt="生气的时候怎么办封面" loading="lazy"><div class="yb-book-body"><h3>生气的时候怎么办</h3><p>情绪小怪兽系列第二册。用故事和图画告诉孩子：生气是正常的，关键是如何表达。把专业情绪管理方法转化为幼儿能理解的应对方式，适合反复亲子共读。</p><div class="yb-book-meta"><span>26 页 · 情绪绘本</span><span class="yb-pill">情绪绘本</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-09.webp" alt="害怕的时候怎么办封面" loading="lazy"><div class="yb-book-body"><h3>害怕的时候怎么办</h3><p>情绪小怪兽系列第三册。围绕孩子常见的恐惧与胆小，用温柔的画面和语言接纳害怕的感受，再给出可尝试的小步骤，帮助孩子在游戏中慢慢建立勇气。</p><div class="yb-book-meta"><span>26 页 · 情绪绘本</span><span class="yb-pill">情绪绘本</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-10.webp" alt="难过的时候怎么办封面" loading="lazy"><div class="yb-book-body"><h3>难过的时候怎么办</h3><p>情绪小怪兽系列第四册。教孩子辨认难过、说出难过，并知道难过时可以向谁求助。让情绪被看见、被命名，是幼儿情绪调节能力发展的第一步。</p><div class="yb-book-meta"><span>26 页 · 情绪绘本</span><span class="yb-pill">情绪绘本</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-11.webp" alt="嫉妒的时候怎么办封面" loading="lazy"><div class="yb-book-body"><h3>嫉妒的时候怎么办</h3><p>情绪小怪兽系列第五册。针对二胎与多子女家庭中常见的嫉妒、争宠感受，从孩子视角讲述「为什么我会不舒服」，帮助手足之间学会表达与相处。</p><div class="yb-book-meta"><span>26 页 · 情绪绘本</span><span class="yb-pill">情绪绘本</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-12.webp" alt="开心与分享封面" loading="lazy"><div class="yb-book-body"><h3>开心与分享</h3><p>情绪小怪兽系列第六册。从积极情绪出发，让孩子体会开心、感激与分享的快乐，把美好的感受变成可以重复的经验，而不只是讲道理。</p><div class="yb-book-meta"><span>26 页 · 情绪绘本</span><span class="yb-pill">情绪绘本</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-13.webp" alt="让自己冷静下来的办法封面" loading="lazy"><div class="yb-book-body"><h3>让自己冷静下来的办法</h3><p>情绪小怪兽系列第七册。把深呼吸、暂停、冷静角等方法画成孩子能照着做的图画步骤，让「先冷静下来」从一句要求变成孩子自己掌握的小技能。</p><div class="yb-book-meta"><span>26 页 · 情绪绘本</span><span class="yb-pill">情绪绘本</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-14.webp" alt="儿童情绪管理全书（家长版）封面" loading="lazy"><div class="yb-book-body"><h3>儿童情绪管理全书（家长版）</h3><p>把情绪主题扩展为「识别—命名—接纳—调节」的完整方法论，覆盖愤怒、焦虑、恐惧与情绪爆发现场，也谈家长自身情绪和家庭氛围，并配有孩子可用的练习册。</p><div class="yb-book-meta"><span>40 页 · 情绪与心理</span><span class="yb-pill">主题深挖</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-15.webp" alt="我的情绪小书封面" loading="lazy"><div class="yb-book-body"><h3>我的情绪小书</h3><p>《儿童情绪管理全书》的配套孩子练习册。情绪温度计、冷静角打卡、心情日记等互动页，让方法从「家长知道」变成「孩子会做」，适合亲子一起动手完成。</p><div class="yb-book-meta"><span>16 页 · 儿童练习</span><span class="yb-pill">主题深挖</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-16.webp" alt="学习心理与学习力封面" loading="lazy"><div class="yb-book-body"><h3>学习心理与学习力</h3><p>面向小学生家长的学习能力培养指南。从学习动机、专注力、作业习惯、阅读与复习，到考试焦虑、成长型思维和厌学干预，既讲方法也讲心理，不流于技巧堆砌。</p><div class="yb-book-meta"><span>40 页 · 学习成长</span><span class="yb-pill">主题深挖</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-17.webp" alt="儿童心理问题识别与家庭支持封面" loading="lazy"><div class="yb-book-body"><h3>儿童心理问题识别与家庭支持</h3><p>面向家长与教师的专业科普读本，围绕 ADHD、焦虑、抑郁、抽动、孤独谱系、强迫等主题，以「早期信号识别—何时求助—家庭如何配合」为主线，专业门槛高、竞品少。</p><div class="yb-book-meta"><span>44 页 · 家长成长</span><span class="yb-pill">主题深挖</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-18.webp" alt="分龄性教育与身体边界封面" loading="lazy"><div class="yb-book-body"><h3>分龄性教育与身体边界</h3><p>按 3—6 岁、6—9 岁、9—12 岁分龄展开，说明「该说什么、说到什么程度、怎么回答尴尬问题」，并覆盖防性侵教育与「同意」的概念，给家长可直接使用的具体话术。</p><div class="yb-book-meta"><span>49 页 · 家长成长</span><span class="yb-pill">主题深挖</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-19.webp" alt="安全与生命教育封面" loading="lazy"><div class="yb-book-body"><h3>安全与生命教育</h3><p>把居家与交通安全、防拐骗、网络与信息安全、意外伤害预防系统化，并强化常被忽视的死亡与生命教育、灾难与危机中的心理支持，兼顾防护技能与生命态度培养。</p><div class="yb-book-meta"><span>46 页 · 家长成长</span><span class="yb-pill">主题深挖</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-20.webp" alt="爸爸的育儿课封面" loading="lazy"><div class="yb-book-body"><h3>爸爸的育儿课</h3><p>专写给父亲的育儿读本。强调爸爸在规则、探索与独立性上的独特作用，语言更直接，涵盖爸爸专属亲子游戏、忙碌爸爸的高质量陪伴，以及夫妻教养分歧的处理。</p><div class="yb-book-meta"><span>43 页 · 角色育儿</span><span class="yb-pill">角色与专业</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-21.webp" alt="单亲与重组家庭封面" loading="lazy"><div class="yb-book-body"><h3>单亲与重组家庭</h3><p>去标签化、不评判，回应单亲与重组家庭的真实难题：如何告诉孩子、如何面对探视与继亲关系、重组家庭怎样磨合，以及怎样在经济与时间压力下给孩子稳定感。</p><div class="yb-book-meta"><span>39 页 · 角色育儿</span><span class="yb-pill">角色与专业</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-22.webp" alt="教师视角：读懂你的学生封面" loading="lazy"><div class="yb-book-body"><h3>教师视角：读懂你的学生</h3><p>面向幼儿园与小学教师的 B 端专业读本。把儿童发展心理学与课堂管理结合，帮助教师读懂行为背后的原因，覆盖课堂注意力、师生沟通、校园心理危机识别与转介。</p><div class="yb-book-meta"><span>45 页 · 专业用书</span><span class="yb-pill">角色与专业</span></div></div></article><article class="yb-book reveal"><img src="assets/yozerbook/cover-23.webp" alt="家长自我成长封面" loading="lazy"><div class="yb-book-body"><h3>家长自我成长</h3><p>把育儿上升为育己。从父母的情绪触发器、原生家庭的影响、完美主义陷阱到夫妻关系与自我关怀，帮助家长完成自我觉察，构建成长型家庭。</p><div class="yb-book-meta"><span>45 页 · 家长成长</span><span class="yb-pill">角色与专业</span></div></div></article></div>
+</div></section>
+
+<section class="section wrap" id="reader"><div class="wrap">
+  <div class="sec-head"><div class="kicker">READING EXPERIENCE</div><h2>像翻纸质书一样自然</h2><p>竖屏页面自适应铺满屏幕，左右滑动翻页带平滑动画；需要看细节时双指放大，读累了交给自动翻页与语音朗读。</p></div>
+  <div class="reader-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center">
+    <div>
+      <ul class="tick-list"><li>手势翻页：左右滑动或点击按钮，翻页动画顺滑自然。</li><li>自由缩放：双指捏合 1–6 倍，放大后拖动平移，双击复位。</li><li>自动翻页：单击按钮循环切档，末页自动停止。</li><li>语音朗读：每页只读一遍，翻新页后自动开始读新内容。</li></ul>
+      <div style="margin-top:18px"><span class="yb-chip">关闭</span><span class="yb-chip on">10 秒</span><span class="yb-chip">20 秒</span><span class="yb-chip">30 秒</span><span class="yb-chip">1 分钟</span></div>
+    </div>
+    <div><img class="reader-img" src="assets/yozerbook/reader-page.webp" alt="阅读页示例" loading="lazy"></div>
+  </div>
+</div></section>
+
+<section class="section section-alt" id="privacy"><div class="wrap">
+  <div class="sec-head"><div class="kicker">PRIVACY & SECURITY</div><h2>内容加密，阅读不联网</h2><p>所有电子书内容在打包阶段即完成加密封装，APK 内不存在可直接打开的明文页面或文本。</p></div>
+  <div class="feature-grid"><article class="feature reveal"><h3>加密媒体包</h3><p>封面、页面图像与朗读文本封装为 YZPK 加密包，经 zlib 压缩与 SHA-256 密钥流混淆，文件管理器无法直接打开。</p></article><article class="feature reveal"><h3>纯离线运行</h3><p>不申请网络权限，不上传阅读记录；打开 App 即可阅读全部内置内容，飞机模式也能正常使用。</p></article><article class="feature reveal"><h3>无账号无广告</h3><p>无需注册登录，不收集阅读偏好，也没有广告打扰；打开 App 就是属于你的安静书架。</p></article></div>
+</div></section>
+
+<section class="section wrap" id="faq"><div class="wrap">
+  <div class="sec-head"><div class="kicker">FAQ</div><h2>常见问题</h2></div>
+  <div class="faq-list"><details class="faq-item reveal"><summary>使用过程中需要联网吗？</summary><div class="faq-a"><p>不需要。所有内容都已加密内置在 App 中，阅读、自动翻页、语音朗读均离线完成。</p></div></details><details class="faq-item reveal"><summary>语音朗读没有声音怎么办？</summary><div class="faq-a"><p>请确认手机系统已安装中文 TTS 语音数据、媒体音量已打开；缺少中文语音数据时 App 会给出提示。</p></div></details><details class="faq-item reveal"><summary>自动翻页会打断朗读吗？</summary><div class="faq-a"><p>不会。当前页朗读完成后才会翻到下一页，并开始朗读新页内容；关闭朗读时则严格按所选间隔翻页。</p></div></details><details class="faq-item reveal"><summary>支持哪些安卓版本？</summary><div class="faq-a"><p>支持 Android 8.0（API 26）及以上版本，安装包约 121 MB，无需额外下载数据。</p></div></details></div>
+</div></section>
+
+<section class="section section-alt" id="download"><div class="wrap">
+  <div class="sec-head"><div class="kicker">DOWNLOAD</div><h2>下载 V1.0.0</h2><p>23 本书全部加密内置，安装包约 121 MB。点击前往 GitHub Releases 获取。</p></div>
+  <div class="dl-grid">
+    <article class="dl-card dl-main reveal">
+      <div class="dl-badge">唯一发布版本</div>
+      <div class="dl-head"><img src="assets/yozerbook/icon.webp" alt=""><div><h3>悦泽图书 <span>V1.0.0</span></h3><p>儿童心理与亲子成长电子书阅读器</p></div></div>
+      <div class="dl-facts">
+        <div><span>文件名</span><b class="mono">YozerLibrary_V1.0.0.apk</b></div>
+        <div><span>文件大小</span><b>约 121 MB（127,009,561 字节）</b></div>
+        <div><span>架构与系统</span><b>Android 8.0+ · portrait</b></div>
+        <div><span>托管</span><b>GitHub Releases</b></div>
+        <div><span>SHA-256</span><b class="mono">036472a65f392f32769b43bec54d8bd62b2fda0448246cc3e822a64febed06af</b></div>
+      </div>
+      <a class="btn btn-primary btn-block" href="https://github.com/YozerHealth/YozerWeb/releases/download/YozerLibrary_V1.0.0/YozerLibrary_V1.0.0.apk" target="_blank" rel="noopener" data-dl>下载 APK <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg></a>
+      <p class="dl-tip">安装包由 Yozer 官方发布于 GitHub Releases；下载前请确认发布者与文件名一致。</p>
+    </article>
+    <div class="notice-box" style="margin-top:0"><h3>安装小贴士</h3><ol>
+      <li>下载完成后点击 APK，按系统提示允许安装未知来源应用。</li><li>安装包较大，请预留足够存储空间；全部内容已内置，无需额外下载。</li><li>首次打开即可在书架看到 23 本电子书，点击任意封面开始阅读。</li><li>问题反馈：微信 YozerHealth 或邮箱 YozerHealth@163.com。</li>
+    </ol></div>
+  </div>
+</div></section>
+<section class="section wrap"><div class="cta-card reveal" style="--accent:#2E5E51"><div>
+  <div class="kicker">DOWNLOAD</div><h2>现在就打开第一本书</h2><p>适合希望把儿童心理与亲子沟通知识放进随手可读书架的家长、教师与家庭教育工作者。</p>
+  <a class="btn btn-primary btn-lg" href="https://github.com/YozerHealth/YozerWeb/releases/download/YozerLibrary_V1.0.0/YozerLibrary_V1.0.0.apk" target="_blank" rel="noopener" data-dl>免费下载 V1.0.0</a>
+</div><div class="cta-tags"><span>23 本内置</span><span>无需联网</span><span>无广告</span></div></div></section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <div class="brand"><img class="brand-mark" src="assets/logo-mark.png" alt=""><span class="brand-text"><b>Yozer</b><small>悦泽图书</small></span></div>
+      <p>专注家庭健康与儿童心理的产品团队，坚持端侧优先、隐私优先。</p>
+    </div>
+    <div class="footer-col"><h4>悦泽图书</h4><a href="#overview">应用概览</a><a href="#features">核心功能</a><a href="#download">下载安装</a></div>
+    <div class="footer-col"><h4>Yozer 全家应用</h4><a href="index.html">首页</a><a href="apps.html">手机应用</a><a href="ebooks.html">电子书</a><a href="mentalbook.html">悦泽心理绘本</a><a href="yozerhealth.html">悦泽健康</a><a href="psychometric.html">悦泽量表</a><a href="mentalaid.html">悦泽心情急救</a><a href="mentalgrowth.html">悦泽心理成长</a><a href="yozerbook.html">悦泽图书</a></div>
+    <div class="footer-col"><h4>问题反馈</h4><span>微信：YozerHealth</span><span>邮箱：YozerHealth@163.com</span></div>
+  </div>
+  <div class="wrap footer-bottom"><span>© 2026 Yozer 悦泽科技</span><span class="disclaimer">本页面为产品介绍，内容以 App 内实际版本为准。</span></div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>
