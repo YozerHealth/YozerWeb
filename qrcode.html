@@ -124,7 +124,7 @@
               fill="none" stroke="#fff" stroke-width="2.6"
               stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      <div class="name">悦泽健康<small>YozerHealth</small></div>
+      <div class="name"><span data-i18n="appName">悦泽健康</span><small>YozerHealth</small></div>
     </div>
     <button class="lang-btn" id="langBtn" type="button">EN</button>
   </header>
@@ -2470,6 +2470,7 @@ var qrcode = function() {
   (function () {
     var dict = {
       zh: {
+        appName: "悦泽健康",
         qrTitle: "扫码下载悦泽健康",
         qrHint: "用手机扫描下方二维码，即可直接下载 Android 安装包。",
         releaseTag: "推荐", releaseName: "正式版",
@@ -2480,6 +2481,7 @@ var qrcode = function() {
         plat: "适用于 Android（arm64-v8a）· 纯静态托管"
       },
       en: {
+        appName: "YozerHealth",
         qrTitle: "Scan to download YozerHealth",
         qrHint: "Scan the QR code below with your phone to download the Android APK.",
         releaseTag: "Recommended", releaseName: "Release",
@@ -2491,6 +2493,10 @@ var qrcode = function() {
       }
     };
     var lang = "zh";
+    try {
+      var q = new URLSearchParams(window.location.search).get("lang");
+      if (q === "en" || q === "zh") lang = q;
+    } catch (e) {}
     var btn = document.getElementById("langBtn");
     function apply() {
       document.documentElement.lang = (lang === "zh") ? "zh" : "en";

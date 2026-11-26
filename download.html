@@ -126,7 +126,7 @@
               fill="none" stroke="#fff" stroke-width="2.6"
               stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      <div class="name">悦泽健康<small>YozerHealth</small></div>
+      <div class="name"><span data-i18n="appName">悦泽健康</span><small>YozerHealth</small></div>
     </div>
     <button class="lang-btn" id="langBtn" type="button">EN</button>
   </header>
@@ -178,6 +178,7 @@
   (function () {
     var dict = {
       zh: {
+        appName: "悦泽健康",
         tagline: "一站式个人健康管理助手",
         intro: "用药提醒、健康记录、数据本地加密保存。下载 Android 客户端，开启你的健康管理。",
         f1: "用药提醒", f2: "健康记录", f3: "本地加密", f4: "离线可用",
@@ -190,6 +191,7 @@
         privacyLink: "隐私政策", homeLink: "返回首页"
       },
       en: {
+        appName: "YozerHealth",
         tagline: "Your all-in-one personal health manager",
         intro: "Medication reminders, health logs, and locally encrypted storage. Download the Android app to start managing your health.",
         f1: "Meds reminder", f2: "Health logs", f3: "Local encryption", f4: "Works offline",
@@ -203,6 +205,10 @@
       }
     };
     var lang = "zh";
+    try {
+      var q = new URLSearchParams(window.location.search).get("lang");
+      if (q === "en" || q === "zh") lang = q;
+    } catch (e) {}
     var btn = document.getElementById("langBtn");
     function apply() {
       document.documentElement.lang = (lang === "zh") ? "zh" : "en";
