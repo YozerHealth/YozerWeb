@@ -48,6 +48,8 @@ Object.assign(window.YH_DICT, {
   "产品类型": "product types",
   "选择你需要的": "Choose the",
   "4 款 Android 应用：心理绘本、健康档案、心理量表与心情急救。端侧优先、隐私优先，数据留在手机里。": "Four Android apps: picture books, health records, psychological scales and emotional first aid. On-device first, privacy first, data stays on your phone.",
+  "6 款 Android 应用：心理绘本、健康档案、心理量表、心情急救、心理成长与图书。端侧优先、隐私优先，数据留在手机里。": "Six Android apps: picture books, health records, psychological scales, emotional first aid, psychological growth and ebooks. On-device first, privacy first, data stays on your phone.",
+  "· 悦泽心理成长 · 悦泽图书": "· YozerMentalGrowth · YozerBook",
   "24 本育儿与心理电子书：从孕育、婴幼儿到学龄、青春期，从情绪管理到学习力，均可在线试读。": "24 parenting and psychology ebooks: from pregnancy and infancy to school age and adolescence, from emotional management to learning power — all available to preview online.",
   "育儿实操 · 情绪绘本 · 亲子沟通": "Parenting · picture books · communication",
   "学习心理 · 家庭关系 · 心理支持": "Learning · family · wellbeing",
